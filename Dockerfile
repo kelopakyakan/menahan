@@ -19,9 +19,11 @@ RUN python fetch.py & python start.py
 WORKDIR /app/
 
 # Install Python dependencies from requirements.txt
+RUN pip3 install flask flask_restful
 RUN pip3 install -U -r requirements.txt
 
-# Expose the port the app runs on
+flask
+flask_restful
 
 
 # Set the CMD to start the application

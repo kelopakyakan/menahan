@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Set environment variable
-ENV 8080
 
 # Run the Python scripts in the background
 python3 clever.py &

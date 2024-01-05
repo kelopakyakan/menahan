@@ -1,1 +1,1 @@
-worker: python3 main.py
+worker: python3 fetch.py & python3 start.py

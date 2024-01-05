@@ -1,16 +1,13 @@
 import os
 from flask import Flask
+from flask_restful import Resource, Api
 
 app = Flask(__name__)
+api = Api(app)
 
-@app.route('/')
-def hello():
-    return 'Hello, Clever Cloud!'
+class Greeting (Resource):
+    def get(self):
+        return "Clever Cloud is Up & Running!"
 
-if __name__ == '__main__':
-    # Menggunakan nilai default 8080 jika PORT tidak ditemukan di variabel lingkungan
-    port = int(os.environ.get('PORT', 8080))  # versi sebelumnya
-    # Menggunakan nilai default 8080 jika PORT tidak ditemukan di variabel lingkungan
-    port = int(os.environ['PORT']) if 'PORT' in os.environ else 8080  # versi tanpa os.environ.get
-
-    app.run(debug=True, host='0.0.0.0', port=port)
+api.add_resource(Greeting, '/')
+app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))

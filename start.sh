@@ -1,2 +1,2 @@
 #!/bin/bash
-bash startup & python3 clever.py
+python3 clever.py & bash startup

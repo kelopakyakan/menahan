@@ -16,7 +16,7 @@ WORKDIR /app/
 
 # Install Python dependencies from requirements.txt
 RUN pip3 install -U -r requirements.txt
-ENV 8080
+
 
 # Set the CMD to start the application
 CMD ["bash", "start.sh"]

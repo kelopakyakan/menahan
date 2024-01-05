@@ -1,4 +1,4 @@
-FROM python:3.9.7-slim-buster
+FROM python:latest
 
 # set timezone
 ENV TZ=Asia/Kolkata

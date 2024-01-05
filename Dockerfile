@@ -8,7 +8,7 @@ RUN  apt-get install -y \
    mediainfo \
    p7zip-full
 
-ENV 8080
+EXPOSE 8080
 
 # Copy application code into the container
 COPY . /app/

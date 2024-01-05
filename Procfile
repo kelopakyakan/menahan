@@ -1,1 +1,1 @@
-worker: python3 clever.py
+worker: bash startup

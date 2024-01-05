@@ -1,4 +1,4 @@
-FROM python:latest
+FROM theteamultroid/ultroid:main
 
 # set timezone
 ENV TZ=Asia/Kolkata

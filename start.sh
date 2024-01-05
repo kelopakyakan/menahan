@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set environment variable
-export PORT=8080
+ENV 8080
 
 # Run the Python scripts in the background
 python3 clever.py &
